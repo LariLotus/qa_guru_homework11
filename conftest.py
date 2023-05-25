@@ -46,9 +46,6 @@ def setup_browser(request):
         options=options
     )
 
-    # driver = webdriver.Remote(
-    #     command_executor="https://user1%1234@selenoid:autotests.cloud/wd/hub",
-    #     options=options)
 
     browser = Browser(Config(driver))
 
@@ -57,6 +54,6 @@ def setup_browser(request):
     attach.add_html(browser)
     attach.add_screenshot(browser)
     attach.add_logs(browser)
-    # attach.add_video(browser)
+    attach.add_video(browser)
 
     browser.quit()
