@@ -18,7 +18,7 @@ def test_filling_out_the_form(setup_browser):
         browser.element('#firstName').set_value(first_name)
         browser.element('#lastName').set_value(last_name)
         browser.element('#userEmail').type('larilotus12@gmail.com')
-        browser.element('[value="Female"]').double_click()
+        # browser.element('[value="Female"]').double_click()
         browser.element('#userNumber').type('8902208866')
 
         # browser.element('#dateOfBirthInput').click()
