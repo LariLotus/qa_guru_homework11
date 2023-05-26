@@ -3,3 +3,4 @@ tests/allure-results
 /allure
 /.idea
 venv
+.env
