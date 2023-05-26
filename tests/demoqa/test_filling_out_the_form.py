@@ -18,7 +18,7 @@ def test_filling_out_the_form(setup_browser):
         browser.element('#firstName').set_value(first_name)
         browser.element('#lastName').set_value(last_name)
         browser.element('#userEmail').type('larilotus12@gmail.com')
-        # browser.element('[value="Female"]').double_click()
+        browser.element('[value="Female"]').double_click()
         browser.element('#userNumber').type('8902208866')
 
         # browser.element('#dateOfBirthInput').click()
@@ -38,7 +38,7 @@ def test_filling_out_the_form(setup_browser):
         browser.element('#react-select-3-input').type('NCR').press_enter()
         browser.element('#react-select-4-input').type('Delhi').press_enter()
 
-        browser.element('#submit').press_enter()
+        browser.element('#submit').click()
 
         with allure.step("Check form results"):
             browser.element("#example-modal-sizes-title-lg").should(have.text("Thanks for submitting the form"))
