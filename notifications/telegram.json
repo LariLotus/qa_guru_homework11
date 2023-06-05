@@ -6,7 +6,7 @@
     "reportLink": "${BUILD_URL}",
     "language": "en",
     "messenger": "telegram",
-    "allureFolder": "/qa_guru_homework11/allure",
+    "allureFolder": "qa_guru_homework11/allure/",
     "enableChart": true
   },
   "telegram": {
