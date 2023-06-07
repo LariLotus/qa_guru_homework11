@@ -4,3 +4,4 @@ tests/allure-results
 /.idea
 venv
 .env
+/notifications/
